@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Here you can check out all the awesome Lollitop projects"
+    />
+    <meta
+      name="keywords"
+      content="projects, project, lollitop, lolli, top, collab, style, collaboration "
+    />
+    <meta name="author" content="Jonas Dalmose Jensen" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+
+    <title>Lollitop Projects</title>
+  </head>
+
+  <body>
+    <!--header med logo og navigation-->
+    <header class="header">
+      <div id="top-menu">
+        <a id="logo" href="index.html">
+          <picture>
+            <source srcset="images/logosilver.webp" type="image/webp" />
+            <source srcset="images/logosilver.png" type="image/png" />
+            <img src="images/logosilver.png" alt="Lollitop" />
+          </picture>
+        </a>
+
+        <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
+        <div id="burger-icon">
+          <img src="images/burger-icon.svg" alt="Menu icon" />
+        </div>
+
+        <!--desktop navigation-->
+        <ul id="desktop-menu">
+          <li>
+            <a href="shop.html"><span class="menu-underline">S</span>HOP</a>
+          </li>
+          <li>
+            <a href="gallery.html">
+              <span class="menu-underline">G</span>ALLERY</a
+            >
+          </li>
+          <li>
+            <a href="projects.html">
+              <span class="menu-underline">P</span>ROJECTS</a
+            >
+          </li>
+          <li>
+            <a href="production.html">
+              <span class="menu-underline">P</span>RODUCTION</a
+            >
+          </li>
+          <li>
+            <a href="about.html"> <span class="menu-underline">A</span>BOUT</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--mobile pop-up navigation-->
+      <ul id="dropdown-menu">
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="production.html">PRODUCTION</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </header>
+    <!--header slut-->
+
+    <!-- content -->
+    <main>
+      <p id="bread-crumb">
+        <a href="index.html">HOMEPAGE</a> &gt;
+        <a href="projects.html">PROJECTS</a>
+      </p>
+
+      <h1>PROJECTS</h1>
+
+      <!-- Content på siden start -->
+      <article id="kaaliyah-project">
+        <h2>KAALIYAH - FREAKING ME OUT MUSIC VIDEO</h2>
+        <!-- section med video start -->
+        <section id="media1">
+          <video id="video">
+            <source src="video/Kaaliyah.mp4" type="video/mp4" />
+          </video>
+          <img
+            src="images/play_button.svg"
+            alt="Play button"
+            id="play-button"
+          />
+          <picture id="tv_frame">
+            <source srcset="images/tv.webp" type="image/webp" />
+            <source srcset="images/tv.png" type="image/png" />
+            <img src="images/tv.png" alt="" />
+          </picture>
+        </section>
+        <!-- section med video slut -->
+
+        <p id="kaaliyah-text">
+          Recently Kaaliyah filmed a music video and she was wearing a Lollitop.
+          We are excited to have been part of her look for the video.
+        </p>
+        <!-- section med behind the scenes fotos start -->
+        <section id="media2">
+          <picture class="photos">
+            <source srcset="images/1.webp" type="image/webp" />
+            <source srcset="images/1.png" type="image/png" />
+            <img src="images/1.png" alt="" />
+          </picture>
+
+          <picture class="photos">
+            <source srcset="images/2.webp" type="image/webp" />
+            <source srcset="images/2.png" type="image/png" />
+            <img src="images/2.png" alt="" />
+          </picture>
+
+          <picture class="photos">
+            <source srcset="images/3.webp" type="image/webp" />
+            <source srcset="images/3.png" type="image/png" />
+            <img src="images/3.png" alt="" />
+          </picture>
+        </section>
+        <!-- section med behind the scenes fotos slut -->
+      </article>
+      <!-- Content på siden slut -->
+    </main>
+
+    <footer>
+      <div class="footer-social-icons">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/lollitop8000/"
+              ><img src="images/pinkinsta.png" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Lollitop8000-103294858154757"
+              ><img src="images/pinkfb.png" alt="Facebook"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- load jQuery library -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <!-- load JavaScript -->
+    <script src="js/js.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>

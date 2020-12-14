@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Here you can learn more about Lollitop as a brand and their values"
+    />
+    <meta
+      name="keywords"
+      content="About, Lollitop, Lolli, Top, Sustainable, style, conscious, recycle, upcycle"
+    />
+    <meta name="author" content="Kasper Juel" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+
+    <title>Lollitop About</title>
+  </head>
+
+  <body>
+    <!--header med logo og navigation-->
+    <header class="header">
+      <div id="top-menu">
+        <a id="logo" href="index.html">
+          <picture>
+            <source srcset="images/logosilver.webp" type="image/webp" />
+            <source srcset="images/logosilver.png" type="image/png" />
+            <img src="images/logosilver.png" alt="Lollitop" />
+          </picture>
+        </a>
+
+        <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
+        <div id="burger-icon">
+          <img src="images/burger-icon.svg" alt="Menu icon" />
+        </div>
+
+        <!--desktop navigation-->
+        <ul id="desktop-menu">
+          <li>
+            <a href="shop.html"><span class="menu-underline">S</span>HOP</a>
+          </li>
+          <li>
+            <a href="gallery.html">
+              <span class="menu-underline">G</span>ALLERY</a
+            >
+          </li>
+          <li>
+            <a href="projects.html">
+              <span class="menu-underline">P</span>ROJECTS</a
+            >
+          </li>
+          <li>
+            <a href="production.html">
+              <span class="menu-underline">P</span>RODUCTION</a
+            >
+          </li>
+          <li>
+            <a href="about.html"> <span class="menu-underline">A</span>BOUT</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--mobile pop-up navigation-->
+      <ul id="dropdown-menu">
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="production.html">PRODUCTION</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </header>
+
+    <!--header slut-->
+
+    <main>
+      <p id="bread-crumb">
+        <a href="index.html">HOMEPAGE</a> &gt;
+        <a href="about.html">ABOUT</a>
+      </p>
+      <article id="about">
+        <!--Article her indeholder en section med flexcontainer, der flexer de 2 billeder horisontalt.-->
+        <h1>ABOUT</h1>
+        <h2>U WANT TO KNOW MORE ABOUT US?</h2>
+
+        <!--section med billeder, som flexer-->
+        <section id="flex-container">
+          <picture id="picture_1">
+            <source srcset="images/aboutbillede.webp" type="image/webp" />
+            <source srcset="images/aboutbillede.png" type="image/png" />
+            <img src="images/aboutbillede.png" alt="Lollitop logo on mirror" />
+          </picture>
+          <picture id="picture_2">
+            <source srcset="images/8200.webp" type="image/webp" />
+            <source srcset="images/8200.jpg" type="image/jpeg" />
+            <img src="images/8200.jpg" alt="Photoshoot on a crane" />
+          </picture>
+        </section>
+
+        <!--Introduktions tekst -->
+        <section id="text">
+          <p id="text_1">
+            LOLLITOP is an Aarhus based brand founded by Nanna in 2020. The
+            ambition is to create an hybrid universe of fashion and art.
+            <br /><br />
+            Every piece of clothing is upcycled and unique. That means ur next
+            night out will unique and more environmentally sustainable cuz when
+            you buy a LOLLITOP you'll be the only one with that top. You'll
+            shine like a disco ball.
+          </p>
+          <!-- paragraph med kontakt informationer -->
+          <p id="text_2">
+            CELL PHONE 22929426
+            <br />E-MAIL: info@lollitop.com
+          </p>
+          <br /><br />
+          <!--paragrapgh udtrykker de gerne samarbejder -->
+        </section>
+        <!--Section med en gif som er et img. -->
+        <section id="xoxo">
+          <img id="gif" src="images/gif3.gif" alt="gif" />
+        </section>
+      </article>
+    </main>
+    <!--footer med SoMe-ikoner + links til Instagram og Facebook-->
+    <footer>
+      <div class="footer-social-icons">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/lollitop8000/">
+              <img src="images/pinkinsta.png" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/Lollitop8000-103294858154757">
+              <img src="images/pinkfb.png" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!--jQuery API implementeres-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <!--links til javascript filer - js.js er fælles javascript - about.js er intern javascript for denne side-->
+    <script src="js/js.js"></script>
+  </body>
+</html>

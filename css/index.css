@@ -1,0 +1,460 @@
+/*logo video som bliver skjuldt på mobil*/
+#logo_play video {
+    display: none;
+}
+
+/*introduktions pop-up*/
+#black-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    padding-top: 2em;
+}
+
+#position-relative {
+    position: relative;
+    max-width: 300px;
+    margin: 1em auto;
+    cursor: pointer;
+}
+
+#position-relative video {
+    width: 90%;
+    position: absolute;
+    z-index: -1;
+    left: 6%;
+    top: 5%;
+}
+
+#play-button {
+    position: absolute;
+    width: 80px;
+    z-index: 1;
+    left: 42%;
+    top: 38%;
+}
+
+#position-relative #tv-frame {
+    width: 100%;
+    margin: 1em 0;
+}
+
+/*heading pop-up*/
+h3 {
+    font-size: 1.7em;
+    color: #f1b3d1;
+    -webkit-text-stroke: 1px #db1f99;
+    text-shadow: 5px 1px #db1f99;
+    text-align: center;
+    font-family: Arame;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+/*heading pop-up*/
+h4 {
+    font-size: 0.9em;
+    color: #05d48a;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-family: "goldman";
+    margin-bottom: 0.5em;
+}
+
+/*button i pop-up*/
+#black-box p {
+    align-self: center;
+    background-color: #db1f99;
+    border-radius: 4px;
+    box-shadow: 4px 4px #9ccfed;
+    font-family: 'goldman';
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    max-width: 250px;
+}
+
+#black-box p:hover {
+    cursor: pointer;
+    background-color: #ff77cf;
+}
+
+#black-box p:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    background-color: #ff77cf;
+}
+
+
+/*parallax bobler*/
+.bobble img {
+    position: absolute;
+    z-index: 50;
+}
+
+#bobble1 img {
+    max-width: 90px;
+    right: 100px;
+    top: 300px;
+}
+
+#bobble2 img {
+    max-width: 60px;
+    right: 30px;
+    top: 400px;
+}
+
+#bobble3 img {
+    max-width: 60px;
+    left: 5px;
+    top: 600px;
+}
+
+#bobble4 img {
+    max-width: 80px;
+    left: 10px;
+    top: 800px;
+}
+
+#bobble5 img {
+    max-width: 100px;
+    right: 3px;
+    top: 900px;
+}
+
+#bobble6 img {
+    max-width: 60px;
+    left: 3px;
+    top: 1000px;
+}
+
+#bobble7 img {
+    max-width: 90px;
+    right: 3px;
+    top: 1200px;
+}
+
+#bobble8 img {
+    max-width: 100px;
+    right: 3px;
+    top: 1400px;
+}
+
+#bobble9 img {
+    max-width: 60px;
+    left: 5px;
+    top: 1600px;
+}
+
+#bobble10 img {
+    max-width: 40px;
+    right: 3px;
+    top: 1650px;
+}
+
+#bobble11 img {
+    max-width: 80px;
+    right: 2px;
+    top: 1800px;
+}
+
+/*tekstintroduktion*/
+#text_section {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+#text_section p {
+    font-size: 0.7em;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+
+/*titel på produkterne*/
+.title {
+    font-size: 0.5em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*produktbilleder*/
+#flex_product {
+    margin-bottom: 15%;
+}
+
+.img_product {
+    margin: 2em 0;
+    position: relative;
+    max-width: 400px;
+}
+
+
+.img_product img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 4px 4px black;
+}
+
+/*tekstboks på produktbillederne*/
+.see-more-text {
+    position: absolute;
+    width: 80%;
+    background-color: rgba(219, 31, 153, 0.5);
+    color: #fff;
+    left: 10%;
+    top: 40%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    z-index: -10;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+/*titel til ig-feed*/
+#title_ig {
+    font-size: 1.3em;
+    text-align: center;
+    color: #05d48a;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    text-shadow: 2px 2px black;
+    -webkit-text-stroke: 0.5px black;
+}
+
+
+/*ig-feed*/
+#instafeed {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/*her tilføjes første media-query*/
+@media only screen and (min-width: 500px) {
+
+    /*parallax bobler*/
+    #bobble1 img {
+        right: 80px;
+    }
+
+    #bobble2 img {
+        right: 50px;
+    }
+
+    #bobble3 img {
+        left: 100px;
+    }
+
+    #bobble4 img {
+        left: 50px;
+    }
+
+    #bobble5 img {
+        right: 3px;
+    }
+
+
+    #bobble6 img {
+        left: 3px;
+    }
+
+
+    #bobble7 img {
+        right: 200px;
+    }
+
+    #bobble8 img {
+        right: 50px;
+    }
+
+    #bobble9 img {
+        left: 400px;
+    }
+
+
+    /*textintroduktion*/
+    #text_section {
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    #text_section p {
+        font-size: 1em;
+    }
+
+    /*titel på produkterne*/
+    .title {
+        font-size: 0.6em;
+        width: 100%;
+    }
+
+    /*produktbilleder*/
+    .img_product img {
+        width: 95%;
+        padding: 0px;
+    }
+
+    .img_product {
+        margin: 1%;
+    }
+
+    .see-more-text {
+        left: 2.5%;
+        top: 35%;
+        width: 95%;
+        font-size: 0.6em;
+    }
+
+    /*her tilføjes flexbox på produktbilleder*/
+    #flex_product {
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+    }
+
+    #title_ig {
+        font-size: 1.7em;
+    }
+
+}
+
+/*her tilføjes anden media-query*/
+@media only screen and (min-width: 700px) {
+
+    /*parallax bobler*/
+    #bobble1 img {
+        right: 120px;
+    }
+
+    #bobble2 img {
+        right: 200px;
+    }
+
+    #bobble3 img {
+        left: 100px;
+    }
+
+    #bobble4 img {
+        left: 150px;
+    }
+
+    #bobble5 img {
+        right: 500px;
+    }
+
+
+    #bobble6 img {
+        left: 150px;
+    }
+
+
+    #bobble7 img {
+        right: 300px;
+    }
+
+    #bobble8 img {
+        right: 50px;
+    }
+
+    #bobble9 img {
+        left: 400px;
+    }
+
+    /*tekst introduktion*/
+    #text_section p {
+        font-size: 1em;
+    }
+
+    /*titel på produkterne*/
+    .title {
+        width: 95%;
+        font-size: 0.8em;
+    }
+
+    /*produktbilleder*/
+    .img_product img {
+        width: 95%;
+        padding: 0px;
+    }
+
+    .img_product {
+        margin: 1%;
+    }
+
+    .see-more-text {
+        top: 45%;
+        font-size: 0.8em;
+    }
+
+    /*her tilføjes flexbox på produktbilleder*/
+    #flex_product {
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+    }
+
+    /*titel til ig-feed*/
+    #title_ig {
+        font-size: 2em;
+        margin-bottom: 3%;
+    }
+
+    /*produktbilleder*/
+    #flex_product {
+        margin-bottom: 10%;
+    }
+}
+
+/*her tilføjes tredje media-query*/
+/*  mobil/tablet skift til desktop !!! */
+@media only screen and (min-width: 1024px) {
+
+    #black-box p {
+        font-size: 1em;
+    }
+
+    /*logo video som bliver vist på desktop*/
+    
+    #logo_play {
+        text-align: center;
+    }
+    
+    #logo_play video {
+        display: block;
+        width: 60%;
+        max-width: 800px;
+        margin: 2em auto;
+        box-shadow: 5px 5px 5px;
+        border-radius: 10px;
+    }
+
+    #flex_product {
+        margin-bottom: 8%;
+    }
+
+    #text_section {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #text_section p {
+        font-size: 1.2em;
+    }
+
+    .see-more-text {
+        font-size: 1em;
+    }
+}

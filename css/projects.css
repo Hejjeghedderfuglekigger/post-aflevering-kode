@@ -1,0 +1,118 @@
+p {
+  font-size: 0.8em;
+}
+
+h2 {
+  margin-bottom: 1.1em;
+}
+
+#kaaliyah-project {
+  margin-top: 2%;
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+#kaaliyah-text {
+  margin-bottom: 1.1em;
+  text-align: center;
+}
+
+#media1 {
+  text-align: center;
+  position: relative;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+
+/*video*/
+#video {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  position: absolute;
+  z-index: -10;
+  top: 4%;
+  left: 16%;
+}
+
+/* Dette er play button til tv'et*/
+#play-button {
+  width: 70px;
+  position: absolute;
+  top: 35%;
+  left: 42%;
+}
+
+#tv_frame img {
+  width: 80%;
+}
+
+/*class til hvert billede*/
+.photos img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin-top: 3%;
+  box-shadow: 4px 4px black;
+}
+
+/*her tilføjes første media-query*/
+@media only screen and (min-width: 500px) {
+  #media1 {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
+
+  #kaaliyah-text {
+    max-width: 800px;
+    margin: 2em auto;
+  }
+
+  #play-button {
+    width: 100px;
+    top: 37%;
+  }
+
+  /* Her gives der width til billeder og flexes til tablet */
+  .photos img {
+    width: 80%;
+  }
+
+  /*container med billeder*/
+  #media2 {
+    display: flex;
+  }
+}
+
+/*her tilføjes anden media-query*/
+@media only screen and (min-width: 700px) {
+  h2 {
+    max-width: 750px;
+  }
+
+  /*container med billeder*/
+  #media2 {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Her tilføjes hover effekt til .photos */
+  .photos {
+    transition: transform 0.15s;
+  }
+
+  .photos:hover {
+    transform: scale(1.1);
+  }
+}
+
+/*her tilføjes tredje media-query*/
+/*  mobil skift til desktop !!! */
+@media only screen and (min-width: 1024px) {
+  #kaaliyah-text {
+    line-height: 125%;
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Buy Lollitop top nr. 34 TIE ME UP" />
+    <meta name="keywords" content="product, shop, lollitop, lolli, top, Sustainable, style, conscious, upcycling, recycling, denim" />
+    <meta name="author" content="Martin Rieper Boesen" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+
+    <title>TOP 34 - TIE ME UP</title>
+</head>
+
+<body>
+    <!--header med logo og navigation-->
+    <header class="header">
+        <div id="top-menu">
+            <a id="logo" href="index.html">
+                <picture>
+                    <source srcset="images/logosilver.webp" type="image/webp">
+                    <source srcset="images/logosilver.png" type="image/png">
+                    <img src="images/logosilver.png" alt="Lollitop">
+                </picture>
+            </a>
+
+            <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
+            <div id="burger-icon">
+                <img src="images/burger-icon.svg" alt="Menu icon" />
+            </div>
+
+            <!--desktop navigation-->
+            <ul id="desktop-menu">
+                <li>
+                    <a href="shop.html"><span class="menu-underline">S</span>HOP</a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        <span class="menu-underline">G</span>ALLERY</a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <span class="menu-underline">P</span>ROJECTS</a>
+                </li>
+                <li>
+                    <a href="production.html">
+                        <span class="menu-underline">P</span>RODUCTION</a>
+                </li>
+                <li>
+                    <a href="about.html"> <span class="menu-underline">A</span>BOUT</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--mobile pop-up navigation-->
+        <ul id="dropdown-menu">
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="production.html">PRODUCTION</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </header>
+    <!--header slut-->
+
+    <!-- content -->
+    <main>
+        <p id="bread-crumb">
+            <a href="index.html">HOMEPAGE</a>&gt; <a href="shop.html">SHOP</a> &gt;
+            <a href="product1.html">TOP 34 - TIE ME UP</a>
+        </p>
+
+        <article>
+            <h1>U WANT TOP NR 34?</h1>
+
+            <section id="product">
+                <!-- Her har jeg en div for at isolere showcase af produktet, så jeg bedre kan rygge rundt på det-->
+                <div>
+                    <h3>TIE ME UP</h3>
+                    <div id="product_showcase">
+                       
+                        <!-- Her bliver alle tre billeder med forskellige vinkler loaded ind samtidig, så det går flydende, når man vælger mellem billederne via JavaScript -->
+                        <div id="pic_change">
+                            <picture class="product_pic">
+                                <source srcset="images/3.1.webp" type="image/webp">
+                                <source srcset="images/3.1.jpg" type="image/jpeg">
+                                <img src="images/3.1.jpg" alt="Front view">
+                            </picture>
+                            <picture class="product_pic">
+                                <source srcset="images/3.2.webp" type="image/webp">
+                                <source srcset="images/3.2.jpg" type="image/jpeg">
+                                <img src="images/3.2.jpg" alt="Side view">
+                            </picture>
+                            <picture class="product_pic">
+                                <source srcset="images/3.3.webp" type="image/webp">
+                                <source srcset="images/3.3.jpg" type="image/jpeg">
+                                <img src="images/3.3.jpg" alt="Back view">
+                            </picture>
+                        </div>
+                        
+                        <!-- Dette er tv rammen der kommer foran billederne. Den skal stå her i strukturen, så den flytter sig op foran billederne, når billederne bliver givet "position: absolut" -->
+                        <picture id="tv_frame">
+                            <source srcset="images/tv.webp" type="image/webp">
+                            <source srcset="images/tv.png" type="image/png">
+                            <img src="images/tv.png" alt="">
+                        </picture>
+                    </div>
+                    
+                    <!-- Dette er knapperne man bruger til at skifte mellem billeder -->
+                    <div id="choose_pic">
+                        <p class="pic_button" id="front_pic">Front</p>
+                        <p class="pic_button" id="side_pic">Side</p>
+                        <p class="pic_button" id="back_pic">Back</p>
+                    </div>
+                </div>
+
+                <!-- Her skal teksten, der til større skærme skal flexes ved siden af showcase, stå-->
+                <div id="product_info">
+                    <div class="info">
+                        <p class="bold">SIZE</p>
+                        <p>One size</p>
+                    </div>
+                    <div class="info">
+                        <p class="bold">TOP NR</p>
+                        <p>34</p>
+                    </div>
+                    <div class="info">
+                        <p class="bold">INFORMATION</p>
+                        <p>Denim</p>
+                    </div>
+                    <div class="info">
+                        <p class="bold">CARE CONDITION</p>
+                        <p>Handwash</p>
+                    </div>
+                    <p id="price">350 kr</p>
+                    <p id="add_to_bag_button">ADD TO BAG</p>
+                </div>
+            </section>
+            
+            <!-- Dette er en ikon serie der kommer i bunden af side før SoMe ikonerne -->
+            <section id="icon-series">
+                <div class="icon-and-text">
+                    <img src="images/Truck.svg" alt="Truck icon" />
+                    <p>FAST DELIVERY</p>
+                </div>
+                <div class="icon-and-text">
+                    <img src="images/Coin.svg" alt="Coin icon" />
+                    <p>FREE SHIPPING</p>
+                </div>
+                <div class="icon-and-text">
+                    <img src="images/Phone-Card.svg" alt="Phone and card icon" />
+                    <p>SAFE PAYMENT</p>
+                </div>
+                <div class="icon-and-text">
+                    <img src="images/Scissor.svg" alt="Scissor icon" />
+                    <p>UNIQUE 1 OF 1 ITEMS</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-social-icons">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/lollitop8000/"><img src="images/pinkinsta.png" alt="Instagram" /></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Lollitop8000-103294858154757"><img src="images/pinkfb.png" alt="Facebook" /></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- load jQuery library -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <!-- load JavaScript -->
+    <script src="js/js.js"></script>
+    <script src="js/product.js"></script>
+</body>
+
+</html>

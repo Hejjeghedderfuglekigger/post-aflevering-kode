@@ -1,0 +1,214 @@
+@font-face {
+  src: url(../fonts/ArameMono-Regular.otf);
+  font-family: Arame;
+}
+
+body {
+  font-size: 20px;
+  background-image: url(../images/background.jpg);
+  line-height: normal;
+  color: #4b4b4b;
+  font-family: "goldman";
+}
+
+#top-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#desktop-menu {
+  display: none;
+}
+
+#burger-icon {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#dropdown-menu {
+  width: 100%;
+  text-align: center;
+}
+
+#dropdown-menu li a {
+  display: block;
+  padding: 5px;
+  margin: 0.5em;
+  color: grey;
+  font-family: "goldman";
+  border-bottom: 2px solid green;
+  font-size: 1.2em;
+}
+
+#dropdown-menu li {
+  color: #db1f99;
+}
+
+#logo {
+  max-width: 200px;
+  margin: 5px 10px 0;
+}
+
+#bread-crumb {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+#bread-crumb a {
+  font-size: 0.6em;
+  font-family: "Arame";
+  color: grey;
+}
+
+h1 {
+  font-size: 1.7em;
+  color: #f1b3d1;
+  -webkit-text-stroke: 1px #db1f99;
+  text-shadow: 5px 1px #db1f99;
+  text-align: center;
+  font-family: Arame;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  font-size: 0.9em;
+  color: #05d48a;
+  -webkit-text-stroke: 0.5px black;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  font-family: "goldman";
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #4b4b4b;
+  font-family: "goldman";
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  padding: 10px;
+}
+
+.footer-social-icons ul img {
+  width: 60px;
+  margin-top: 25px;
+}
+
+.footer-social-icons ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-icons li {
+  margin: 0 30px;
+}
+
+/* MEDIA START ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #logo {
+    max-width: 250px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #dropdown-menu,
+  #burger-icon {
+    display: none;
+  }
+
+  #desktop-menu {
+    display: flex;
+  }
+
+  #desktop-menu li {
+    align-self: center;
+    font-size: 0.6em;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 4px 4px;
+    margin: 0 10px;
+    width: 100px;
+    font-family: "goldman";
+  }
+
+  #desktop-menu li a {
+    color: #4b4b4b;
+    display: block;
+    padding: 7px;
+  }
+
+  #desktop-menu li:hover {
+    cursor: pointer;
+    background-color: #ff77cf;
+  }
+
+  #desktop-menu li:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    background-color: #ff77cf;
+  }
+
+  h2 {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+
+  .menu-underline {
+    text-decoration: underline;
+  }
+}
+
+/*  mobil skift til desktop !!! */
+@media only screen and (min-width: 1024px) {
+  #bread-crumb {
+    font-size: 0.8em;
+  }
+
+  #bread-crumb a {
+    font-size: 0.8em;
+  }
+
+  #desktop-menu li {
+    font-size: 0.7em;
+    width: 120px;
+    margin: 0 20px;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+
+  h1 {
+    margin-top: 3%;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+}
+
+/* MEDIA SLUT ---------------------------------------------------------------------*/

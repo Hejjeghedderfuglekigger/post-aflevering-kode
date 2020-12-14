@@ -1,0 +1,224 @@
+
+/*Styling af produkt navn*/
+h3 {
+    font-size: 1.2em;
+    color: lightgrey;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-family: "goldman";
+    margin-bottom: 5%;
+    margin-bottom: 0;
+}
+
+/*Styling af tv-ramme pg billeder start*/
+/* Her sætter jeg containerne rundt om billederne til "position: relative", så billederne bliver placeret relativt til deres parent contianer*/
+#product_showcase {
+    position: relative;
+    text-align: center;
+}
+
+/* Her sætter jeg billedere til "position: absolut", så de bliver ignoret af strukturen. Så placere jeg dem så de er centreret i TV-rammen*/
+#pic_change img {
+    width: 80%;
+    position: absolute;
+    left: 11%;
+    z-index: -5;
+    top: 5%;
+}
+
+#tv_frame img {
+    width: 90%;
+    position: relative;
+}
+/*Styling af tv-ramme pg billeder end*/
+
+/*Styling af knapper start*/
+/*Knapperne bliver flexet ved siden af hinanden*/
+#choose_pic {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/*Styler knapperne så de ligner knapper*/
+#choose_pic p {
+    padding: 3px;
+    margin: auto 8px;
+    background-color: #db1f99;
+    border-radius: 4px;
+    box-shadow: 2px 2px #000;
+    color: #fff;
+    width: 15%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/*Laver en effekt når man trækker musen ind hover knapperne*/
+#choose_pic p:hover {
+    cursor: pointer;
+    background-color: #ff77cf;
+}
+
+/*Styler knapperne når man klikker på dem.
+.active class bliver brugt til at beholde klikke stylingen, så man kan se hvilken knap man har klikket på.
+.active class bliver sat på den rigtige knap via JavaScript*/
+#choose_pic .active,
+#choose_pic p:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    background-color: #ff77cf;
+}
+/*Styling af knapper end*/
+
+/*Styling af alt info om produktet start*/
+#product_info {
+    width: 80%;
+    margin: 4% auto 0;
+    text-align: center;
+}
+
+.info {
+    margin: 0 auto 1em;
+    font-size: 0.8em;
+}
+
+#product_info .bold {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#product_info #price {
+    font-size: 1.3em;
+    color: #05d48a;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 2px 2px black;
+    font-family: "goldman";
+    margin: 0 auto 1em;
+}
+
+#add_to_bag_button {
+    width: 180px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #db1f99;
+    border-radius: 4px;
+    box-shadow: 4px 4px #000;
+    color: #fff;
+    text-align: center;
+}
+
+#add_to_bag_button:hover {
+    cursor: pointer;
+    background-color: #ff77cf;
+}
+
+#add_to_bag_button:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    background-color: #ff77cf;
+}
+/*Styling af alt info om produktet end*/
+
+/* Styling af ikon serie start*/
+#icon-series {
+    margin: 2em 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-and-text {
+  width: 35%;
+  max-width: 100px;
+  margin: 20px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.icon-and-text img {
+  width: 70%;
+}
+
+.icon-and-text p {
+  font-size: 0.7em;
+}
+/* Styling af ikon serie end*/
+
+
+/*Laver ændringer på stylingen alt efter skærmstørrelse, herfra til slut*/
+@media only screen and (min-width: 500px) {
+    #price {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #product {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    #product_info #price {
+        margin-top: 0.5em;
+    }
+
+    #product_info {
+        text-align: left;
+        margin-left: 2em;
+        width: 35%;
+        margin-right: 0;
+    }
+
+    #product_info #add_to_bag_button {
+        text-align: center;
+        margin: auto 0;
+    }
+
+    #product_showcase {
+        max-width: 650px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    h3 {
+        font-size: 2em;
+    }
+
+    .info p {
+        font-size: 1.2em;
+    }
+
+    #product_info .bold {
+        font-size: 1.5em;
+    }
+
+    #product_info {
+        margin: 45px 0 0 2em;
+    }
+
+    #product_info #price {
+        font-size: 1.5em;
+    }
+
+    #product_info #add_to_bag_button {
+        font-size: 1.2em;
+    }
+
+    #add_to_bag_button {
+        width: 200px;
+    }
+
+    #choose_pic p {
+        font-size: 1em;
+    }
+    
+    
+  .icon-and-text {
+    font-size: 0.7em;
+    max-width: 120px;
+  }
+}

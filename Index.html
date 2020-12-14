@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Welcome to Lollitop virtual universe. Here you can experience and buy unique and sustainable clothing. Every top is upcycled or recycled and we make only one of each piece." />
+    <meta name="keywords" content="lollitop, lolli, top, Sustainable, style, conscious, recycle, upcycle" />
+    <meta name="author" content="Marie Kruger Froekiaerr" />
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Lollitop Home</title>
+</head>
+
+<body>
+
+    <!--Parallax bobler - sættes øverst fordi boblerne skal svæve over alle elementer i HTML dokumentet, når de får position: absolut-->
+    <section>
+        <div id="bobble1" class="bobble" data-rate="-0.5">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble2" class="bobble" data-rate="-2">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble3" class="bobble" data-rate="-1">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble4" class="bobble" data-rate="-1">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble5" class="bobble" data-rate="-1">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble6" class="bobble" data-rate="-1">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble7" class="bobble" data-rate="-3">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble8" class="bobble" data-rate="-1">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble9" class="bobble" data-rate="-3">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble10" class="bobble" data-rate="-1">
+            <picture>
+                <source srcset="images/bobble1.webp" type="image/webp">
+                <source srcset="images/bobble1.png" type="image/png">
+                <img src="images/bobble1.png" alt="">
+            </picture>
+        </div>
+
+        <div id="bobble11" class="bobble" data-rate="-3">
+            <picture>
+                <source srcset="images/bobble_4.webp" type="image/webp">
+                <source srcset="images/bobble_4.png" type="image/png">
+                <img src="images/bobble_4.png" alt="">
+            </picture>
+        </div>
+    </section>
+
+    <!--Pop-up vindue som indeholder infotekst, video samt CTA-->
+    <div id="black-box">
+        <h3 id="heading1">WELCOME TO LOLLITOP</h3>
+        <h4 id="heading2">A HYBRID UNIVERSE OF STYLES AND ART</h4>
+        <div id="position-relative">
+            <video id="blackBoxVideo">
+                <source src="video/video-black-box.MP4" type="video/mp4" />
+            </video>
+            <img src="images/play_button.svg" alt="Play button" id="play-button">
+            <picture>
+                <source srcset="images/tv.webp" type="image/webp">
+                <source srcset="images/tv.png" type="image/png">
+                <img src="images/tv.png" alt="">
+            </picture>
+        </div>
+        <p id="start-button">START UR JOURNEY</p>
+        <!--CTA-->
+    </div>
+
+    <!--header med logo og navigation-->
+    <header class="header">
+        <div id="top-menu">
+            <a id="logo" href="index.html">
+                <picture>
+                    <source srcset="images/logosilver.webp" type="image/webp">
+                    <source srcset="images/logosilver.png" type="image/png">
+                    <img src="images/logosilver.png" alt="Lollitop">
+                </picture>
+            </a>
+
+            <!--Burger ikon der vil skifte til et kryds og tilbage igen, via JavaScript, når man klikker på det-->
+            <div id="burger-icon">
+                <img src="images/burger-icon.svg" alt="Menu icon" />
+            </div>
+
+            <!--desktop navigation-->
+            <ul id="desktop-menu">
+                <li>
+                    <a href="shop.html"><span class="menu-underline">S</span>HOP</a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        <span class="menu-underline">G</span>ALLERY</a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <span class="menu-underline">P</span>ROJECTS</a>
+                </li>
+                <li>
+                    <a href="production.html">
+                        <span class="menu-underline">P</span>RODUCTION</a>
+                </li>
+                <li>
+                    <a href="about.html"> <span class="menu-underline">A</span>BOUT</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--mobile pop-up navigation-->
+        <ul id="dropdown-menu">
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="production.html">PRODUCTION</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </header>
+    <!--header slut-->
+
+    <!-- content -->
+    <main>
+        <article>
+
+            <h1>Hello all U people</h1>
+            <h2>U have now arrived to Lollitops virtual univers</h2>
+
+            <!--section 1 - video med logo som spinner og lyserøde skyer-->
+            <section id="logo_play">
+                <video id="logo_spin">
+                    <source src="video/logospin.mp4" type="video/mp4">
+                </video>
+            </section>
+
+            <!--section 2 - tekstintroduktion-->
+            <section id="text_section">
+                <p id="info_1">U can experience and buy unique and sustainable clothing. Every top is upcycled or recycled and we make only one of each piece.
+                </p>
+
+                <p id="info_2">Help creating a better world and remember when life gives U lemons, wear Lollitop.</p>
+            </section>
+
+            <!--section 3 - tre produktbilleder som flexer horisontalt
+            
+            Alle billederne har links til den underside hvor man kan købe de specifikke produkt-->
+            <section id="flex_product">
+
+
+                <!--produkt 1-->
+                <a href="product2.html">
+                    <div class="img_product">
+                        <p class="title">TOP 44 - 2001 AMA</p>
+                        <p class="see-more-text">SEE MORE</p>
+                        <picture>
+                            <source srcset="images/2.1.webp" type="image/webp">
+                            <source srcset="images/2.1.jpg" type="image/jpeg">
+                            <img src="images/2.1.jpg" alt="top 44 2001 AMA">
+                        </picture>
+                    </div>
+                </a>
+
+                <!--produkt 2-->
+                <a href="product1.html">
+                    <div class="img_product">
+                        <p class="title">TOP 25 - ZUKUNFT</p>
+                        <p class="see-more-text">SEE MORE</p>
+                        <picture>
+                            <source srcset="images/1.1.webp" type="image/webp">
+                            <source srcset="images/1.1.jpg" type="image/jpeg">
+                            <img src="images/1.1.jpg" alt="top 25 Zukunft">
+                        </picture>
+                    </div>
+                </a>
+
+                <!--produkt 3-->
+                <a href="product3.html">
+                    <div class="img_product">
+                        <p class="title">TOP 34 - TIE ME UP</p>
+                        <p class="see-more-text">SEE MORE</p>
+                        <picture>
+                            <source srcset="images/3.1.webp" type="image/webp">
+                            <source srcset="images/3.1.jpg" type="image/jpeg">
+                            <img src="images/3.1.jpg" alt="top 34 Tie Me Up">
+                        </picture>
+                    </div>
+                </a>
+            </section>
+
+            <!--section 4 - instragram feed - API fra Elfsight-->
+            <section id="instafeed">
+                <p id="title_ig">LOLLITOP INSTAGRAM</p>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-e005cd8d-1835-4880-b8fd-cc38fead97f5"></div>
+            </section>
+
+        </article>
+    </main>
+
+    <!--footer med SoMe-ikoner + links til Instagram og Facebook-->
+    <footer>
+        <div class="footer-social-icons">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/lollitop8000/"><img src="images/pinkinsta.png" alt="Instagram" /></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Lollitop8000-103294858154757"><img src="images/pinkfb.png" alt="Facebook" /></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--jQuery API implementeres-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <!--links til javascript filer - js.js er fælles javascript - index.js er intern javascript for denne side-->
+    <script src="js/js.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+h2 {
+  margin-bottom: 1.1em;
+}
+
+/*Skjuler picture_2 pga skærmstørrelse*/
+#picture_2 img {
+  display: none;
+}
+
+/*billeder der flexer horisontalt*/
+#flex-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+#picture_1 {
+  width: 90%;
+}
+
+/*tekstintroduktion - tekstbokse på billederne*/
+#text {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/*Gif*/
+#xoxo {
+  margin: 0 auto;
+  width: 40%;
+}
+
+#text_1 {
+  margin-bottom: 3%;
+}
+
+/*her tilføjes første media-query*/
+@media only screen and (min-width: 600px) {
+  #picture_2 img {
+    display: block;
+  }
+
+  #flex-container picture {
+    display: block;
+    width: 40%;
+    margin: 0.8em;
+  }
+
+  #xoxo {
+    margin: 0 auto;
+  }
+
+  #text {
+    margin: 0 auto;
+    width: 82%;
+  }
+}

@@ -1,0 +1,60 @@
+/* GALLERY START */
+/* rækker og kolonner med billeder */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    width: 45%;
+    margin: 1%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* GALLERY SLUT */
+
+/* IMAGE EFFECT START */
+
+.position-relative {
+    position: relative;
+}
+
+.pop-up-text {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(219, 31, 153, 0.7);
+    color: #fff;
+    top: 37%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: -10;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+/* IMAGE EFFECT SLUT */
+
+@media only screen and (min-width: 500px) {
+    .column {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .column {
+        width: 22%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .pop-up-text {
+        font-size: 0.8em;
+    }
+}
