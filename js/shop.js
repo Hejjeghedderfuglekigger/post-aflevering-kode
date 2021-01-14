@@ -52,7 +52,7 @@ $(document).ready(function () {
     $('#tops').click(function(){showProducts('.top'); setButtonActive(3)});
     $('#t-shirts').click(function(){showProducts('.t-shirt'); setButtonActive(4)});
     $('#blazers').click(function(){showProducts('.blazer'); setButtonActive(5)});
-    $('#kimonos').click(function(){showProducts('.kimono'); setButtonActive(5)});
+    $('#kimonos').click(function(){showProducts('.kimono'); setButtonActive(6)});
     
     
     // ... Kode slut ...
